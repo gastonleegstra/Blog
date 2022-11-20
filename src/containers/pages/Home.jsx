@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 
 function Home({
 }){
-
     return(
         <FullWidthLayout>
             Home

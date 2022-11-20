@@ -36,7 +36,7 @@ DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = [ 
         'localhost',
-        '127.0.0.1'
+        '127.0.0.1',
     ]
 
 if not DEBUG:
@@ -128,7 +128,7 @@ DATABASES = {
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
-COR_ORIGIN_WHITELIST = [
+CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
     'http://localhost:8000',
 ]
@@ -137,6 +137,7 @@ CRSF_TRUSTED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:8000',    
 ]
+
 
 if not DEBUG:
     CORS_ORIGIN_WHITELIST = [
